@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<talents>
+  <talent name="Abate Curse">
+    <title>Abate Curse</title>
+    <step rank="yes" attribute="WIL">Rank + WIL</step>
+    <action>Standard</action>
+    <karma>No</karma>
+    <strain>1</strain>
+    <description>
+      <![CDATA[
+        The adept's presence temporarily nullifies any curses or active spell effects present on an object. It does not alleviate a curse's effects on those already affected by it, but it will allow unaffected characters to handle the object without risk of being cursed or affected by spells. The adept makes an Abate Curse Test against the higher of the highest Step Number of any curse or the highest Dispel Difficulty of any spells present on the object, +1 for each additional curse or spell. If successful, all of the curses and spells are neutralized for a number of hours equal to the adept's Abate Curse Rankâ their effects are suspended, but their duration is still kept track of. The adept must remain within a number of yards equal to his Abate Curse Rank of the target object throughout the talent's duration or the effect ends.
+        ]]>
+    </description>
+     <table> 
+       <title>Dispel Difficulty Table</title>
+          <headers>Spell Circle</headers>
+          <headers>Dispel Difficulty</headers>
+          <row circle="1" difficulty="9" />
+          <row circle="2" difficulty="11" />
+          <row circle="3" difficulty="13" />
+          <row circle="4" difficulty="15" />
+          <row circle="5" difficulty="16" />
+          <row circle="6" difficulty="17" />
+          <row circle="7" difficulty="18" />
+          <row circle="8" difficulty="20" />
+          <row circle="9" difficulty="21" />
+          <row circle="10" difficulty="23" />
+          <row circle="11" difficulty="24" />
+          <row circle="12" difficulty="25" />
+          <row circle="13" difficulty="26" />
+          <row circle="14" difficulty="28" />
+          <row circle="15" difficulty="29" />
+     </table>
+  </talent>
+
+  <talent name="Absorb Damage">
+    <title>Absorb Damage</title>
+    <step rank="yes" attribute="CHA"> Rank + CHA</step>
+    <action>Sustained</action>
+    <duration>Rank rounds</duration>
+    <passion>Thystonius</passion>
+    <description>
+      <![CDATA[
+        The Absorb Damage power allows a questor to add the armor of inspiration to a target character.  The questor talks to the character for 3 rounds, attempting to inspire him by vividly describing the thrill of taking physical risks, then makes an Absorb Damage Test against the target's Social Defense. If the test succeeds, the target adds the questor's Absorb Damage Rank to his Physical Armor. In addition to this effect, increase the result level required to inflict an Armor-Defeating Hit against the target's Physical Armor by one level (from Excellent to Extraordinary, for example).
+      ]]>
+    </description>
+  </talent>
+
+  <talent name="Acrobatic Strike">
+    <title>Acrobatic Strike</title>
+    <step rank="yes" attribute="DEX">Rank + DEX</step>
+    <action>Simple</action>
+    <karma>No</karma>
+    <strain>1</strain>
+    <description>
+      <![CDATA[
+        The adept performs flips, somersaults, or similar acrobatic maneuvers, making him harder to hit. He must be able to move and have sufficient space to perform maneuvers in. The adept makes an Acrobatic Strike Test against the highest Physical Defense of any opponents in close combat range (1 hex) and must then attack one of the opponents in close combat. If both the Acrobatic Strike Test and the Attack Test are successful, the adept adds his Acrobatic Strike Rank to his Physical Defense against the opponents for the remainder of the round. If the adept is Knocked Down or otherwise finds his movement restricted, he loses this bonus.
+      ]]>
+    </description>
+  </talent>
+  
+    <talent>
+    <title>Air Dance</title>
+    <step rank="yes" attribute="DEX">Rank + DEX</step>
+    <action>Free</action>
+    <karma>No</karma>
+    <strain>1</strain>
+    <description>
+      <![CDATA[
+      The adept performs quick, gliding movements and rapid attacks in combat. Air Dance requires that the adept be able to move. Windling adepts may use this talent while flying, but it cannot be combined with talents that utilize other forms of magical movement, such as <a class="link talents">Gliding Stride</a>. The adept substitutes his Air Dance Step for his Dexterity Step
+when making his Initiative Test (see Determine Initiative, p. 214), incurring Initiative Penalties for armor as normal. If making a close combat attack that round, the adept compares his Initiative Test result against his opponent's. On an Excellent Result, the adept may make an additional close combat attack against his opponent, following that character's turn.
+    ]]>
+    </description>
+  </talent>
+  
+    <talent>
+    <title>Gliding Stride</title>
+    <step rank="yes" attribute="DEX">Rank +DEX</step>
+    <action>Free</action>
+    <karma>No</karma>
+    <strain>1</strain>
+    <description>
+      <![CDATA[
+        The adept moves in a graceful fashion through the air, horizontally as well as vertically, using his Movement Rate to glide instead of walking or running. He makes a Gliding Stride Test, the result being the number of hexes he can glide horizontally. The adept is restricted by his Movement Rate for gliding horizontally, but can use the <a>Running</a> combat option to double the distance traveled. For every two hexes he glides horizontally, the adept may move up or down one hex vertically without affecting his total Movement Rate.  The adept cannot go higher, or glide safely lower, than his Gliding Stride Rank in hexes. If the adept happens to be suspended any higher than this in mid-air, he may instinctively activate his Gliding Stride talent to reduce the distance he falls by 2 yards per Rank. Gliding Stride cannot be combined with other talents that allow a special form of movement, such as <a>Sprint</a> or <a>Great Leap</a>.
+        ]]>
+      </description>
+      <example>
+        <![CDATA[
+        Legnaz has a Movement Rate of 6, a Gliding Stride Rank of 8, and has just rolled a 16 on his Gliding Stride Test. He has rolled more distance than he could use if he just wanted to glide horizontally&mdash;his Movement Rate of 6 could be doubled to 12 if Running&mdash; but he wants to go vertically, to glide over a 6-yard-high wall. His game group uses yards in this situation, so he simply multiplies his Test Result by two: 16 hexes equal 32 yards, and his Movement Rate is 12 yards (24 yards if Running). To move upwards 6 yards, he has to move double that distance&mdash;12 yards&mdash;horizontally. This means he can just make it to the top of the wall: 12 yards horizontal gliding constitutes his Movement Rate, and the 6 yards of upwards travel comes free. If he uses the Running combat option, he can move another 12 yards, which would allow him to move 6 yards downwards&mdash;enough movement to get up over the wall and down again in one round.
+      ]]>
+    </example>    
+  </talent>
+</talents>

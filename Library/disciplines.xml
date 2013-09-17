@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<disciplines>
+  <Elementalist caster="yes">
+    <name>Elementalist</name>
+    <circles>
+      <initiate>
+        <opt_talent>Arcane Mutterings</opt_talent>
+        <opt_talent>Haggle</opt_talent>
+        <opt_talent>Read/Write Language</opt_talent>
+        <opt_talent>Speak Language</opt_talent>
+        <opt_talent>Spell Matrix</opt_talent>
+        <one>
+          <disc_talent>Air Speaking</disc_talent>
+          <disc_talent>Karma Ritual</disc_talent>
+          <disc_talent>Read/Write Magic</disc_talent>
+          <disc_talent>Spellcasting</disc_talent>
+          <disc_talent>Spell Matrix</disc_talent>
+          <disc_talent>Theadweaving [Elementalism]</disc_talent>
+        </one>
+      </initiate>
+      <novice>
+          <opt_talent>Astral Sight</opt_talent>
+          <opt_talent>Durability</opt_talent>
+          <opt_talent>Item History</opt_talent>
+          <opt_talent>Parry</opt_talent>
+          <opt_talent>Spell Matrix</opt_talent>
+          <opt_talent>Spell Matrix</opt_talent>
+          <opt_talent>Tracking</opt_talent>
+          <opt_talent>Wind Catcher</opt_talent>
+        <two>
+          <disc_talent>Fire Heal</disc_talent>
+          <circle_bonus type="defense" attribute="spell_defense" amount="1" >Defense: The adept adds +1 to his Spell Defense.</circle_bonus>
+          <spell_bonus circle="2">Spell: The adept learns one new spell from Second Circle.</spell>
+        </two>
+        <three>
+          <disc_talent>Elemental Tongues</disc_talent>
+          <spell_bonus circle="3">Spell: The adept learns one new spell from Third Circle.</spell>
+        </three>
+        <four>
+          <disc_talent>Elemental Hold</disc_talent>
+          <spell_bonus circle="4">Spell: The adept learns one new spell from Fourth Circle.</spell>
+          <karma for="Perception" amount="1">Karma: The adept may spend 1 Karma Point on Perception-only Tests.</karma>
+        </four>
+      </novice>
+      <journeyman>
+        <opt_talent>Detect Trap</opt_talent>
+        <opt_talent>Enhanced Matrix</opt_talent>
+        <opt_talent>Enhanced Matrix</opt_talent>
+        <opt_talent>Gliding Stride</opt_talent>
+        <opt_talent>Spot Armor Flaw</opt_talent>
+        <opt_talent>Steel Thought</opt_talent>
+        <opt_talent>Willforce</opt_talent>
+        <opt_talent>Wood Skin</opt_talent>
+        <five>
+          <disc_talent>Summon</disc_talent>
+          <spell_bonus circle="5">Spell: The adept learns one new spell from Fifth Circle.</spell>
+          <ability>
+              <name>Fire and Ice</name>
+              <effect>
+                <combat kind="fire" step="4" range="touch" armor="yes"/>
+                <description>Create a small flame between his thumb and forefinger. This fire lasts for only one round, but is intense enough to light a torch. If used in combat, it inflicts Step 4/D6 fire damage (Physical Armor provides protection).</description>
+              </effect>
+              <effect>
+                <combat kind="cold" step="4" range="touch" armor="yes"/>
+                <description>Freeze water by touching it with his middle three fingers. The adept can freeze up to one quart of water from each use of this ability. If used in combat, it inflicts Step 4/D6 cold damage (Physical Armor provides protection).</description>
+              </effect>
+          </ability>
+        </five>
+      </journeyman>
+    </circles>
+  </Elementalist> 
+</disciplines>
