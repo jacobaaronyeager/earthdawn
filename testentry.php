@@ -9,14 +9,22 @@
 <head>
     <title>Talent list</title>
     <link rel="stylesheet" href="css/jquery-ui-pepper-grinder/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/tipped/tipped.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="http://code.createjs.com/createjs-2013.05.14.min.js"></script>
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="/js/excanvas/excanvas.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/spinners/spinners.min.js"></script>
+    <script type="text/javascript" src="js/tipped/tipped.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
       preloadLibrary();
-      talentstest.find("talents talent title").text();
-      
+      $(document).ready(function() {
+        setTooltips();
+        talentstest.find("talents talent title").text();
+      });
     </script>
 </head>
 <body>
