@@ -14,7 +14,7 @@
      <table> 
        <title>Dispel Difficulty Table</title>
           <headers>Spell Circle</headers>
-          <headers>Dispel Difficulty</headers>
+          <headers>Difficulty</headers>
           <row circle="1" difficulty="9" />
           <row circle="2" difficulty="11" />
           <row circle="3" difficulty="13" />
@@ -67,7 +67,7 @@
     <strain>1</strain>
     <description>
       <![CDATA[
-      The adept performs quick, gliding movements and rapid attacks in combat. Air Dance requires that the adept be able to move. Windling adepts may use this talent while flying, but it cannot be combined with talents that utilize other forms of magical movement, such as <a class="link talents">Gliding Stride</a>. The adept substitutes his Air Dance Step for his Dexterity Step
+      The adept performs quick, gliding movements and rapid attacks in combat. Air Dance requires that the adept be able to move. Windling adepts may use this talent while flying, but it cannot be combined with talents that utilize other forms of magical movement, such as <a class="link talent">Gliding Stride</a>. The adept substitutes his Air Dance Step for his Dexterity Step
 when making his Initiative Test (see Determine Initiative, p. 214), incurring Initiative Penalties for armor as normal. If making a close combat attack that round, the adept compares his Initiative Test result against his opponent's. On an Excellent Result, the adept may make an additional close combat attack against his opponent, following that character's turn.
     ]]>
     </description>

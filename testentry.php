@@ -1,25 +1,22 @@
 <?php
   include("arrayhelp.php");
   $d = new Debug();
-  $talents = simplexml_load_file("Library/Talents-test.xml") or die("Could not open");
+  $talents = simplexml_load_file("library/talentstest.xml") or die("Could not open");
   $talents = $talents->xpath("/talents/talent");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html>
 <head>
-    <title></title>
+    <title>Talent list</title>
     <link rel="stylesheet" href="css/jquery-ui-pepper-grinder/jquery-ui-1.10.3.custom.min.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://code.createjs.com/createjs-2013.05.14.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
-      $(document).tooltip({
-          items:'a.link',
-          tooltipClass: 'tooltip',
-          position: {my: "left+15 top", at: "right center"},
-          content: function (callback) {
-            //Get content herex
-          }
-        });
+      preloadLibrary();
+      talentstest.find("talents talent title").text();
+      
     </script>
 </head>
 <body>

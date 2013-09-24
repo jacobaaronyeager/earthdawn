@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <disciplines>
-  <Elementalist caster="yes">
+  <discipline caster="yes">
     <name>Elementalist</name>
     <circles>
       <initiate>
@@ -30,15 +30,15 @@
         <two>
           <disc_talent>Fire Heal</disc_talent>
           <circle_bonus type="defense" attribute="spell_defense" amount="1" >Defense: The adept adds +1 to his Spell Defense.</circle_bonus>
-          <spell_bonus circle="2">Spell: The adept learns one new spell from Second Circle.</spell>
+          <spell_bonus circle="2">Spell: The adept learns one new spell from Second Circle.</spell_bonus>
         </two>
         <three>
           <disc_talent>Elemental Tongues</disc_talent>
-          <spell_bonus circle="3">Spell: The adept learns one new spell from Third Circle.</spell>
+          <spell_bonus circle="3">Spell: The adept learns one new spell from Third Circle.</spell_bonus>
         </three>
         <four>
           <disc_talent>Elemental Hold</disc_talent>
-          <spell_bonus circle="4">Spell: The adept learns one new spell from Fourth Circle.</spell>
+          <spell_bonus circle="4">Spell: The adept learns one new spell from Fourth Circle.</spell_bonus>
           <karma for="Perception" amount="1">Karma: The adept may spend 1 Karma Point on Perception-only Tests.</karma>
         </four>
       </novice>
@@ -53,7 +53,7 @@
         <opt_talent>Wood Skin</opt_talent>
         <five>
           <disc_talent>Summon</disc_talent>
-          <spell_bonus circle="5">Spell: The adept learns one new spell from Fifth Circle.</spell>
+          <spell_bonus circle="5">Spell: The adept learns one new spell from Fifth Circle.</spell_bonus>
           <ability>
               <name>Fire and Ice</name>
               <effect>
@@ -68,5 +68,5 @@
         </five>
       </journeyman>
     </circles>
-  </Elementalist> 
+  </discipline> 
 </disciplines>
