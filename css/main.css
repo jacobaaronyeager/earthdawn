@@ -3,3 +3,11 @@ a.link {
   border: 1px solid black;
   padding: 1px;
 }
+
+.t_ContentContainer {
+  width: 400px;
+}
+
+.t_ContentContainer p {
+  font-size: 12px;
+}

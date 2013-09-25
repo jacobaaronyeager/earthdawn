@@ -1,5 +1,4 @@
 <?php
-  include("arrayhelp.php");
   $d = new Debug();
   $talents = simplexml_load_file("library/talentstest.xml") or die("Could not open");
   $talents = $talents->xpath("/talents/talent");
@@ -23,7 +22,6 @@
       preloadLibrary();
       $(document).ready(function() {
         setTooltips();
-        talentstest.find("talents talent title").text();
       });
     </script>
 </head>
@@ -92,6 +90,5 @@
       echo $output;
     }
   ?>
-  <p><?php $d->array_to_html($talents);?></p>
 </body>
 </html>
