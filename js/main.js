@@ -29,9 +29,9 @@ function setTooltips () {
     switch ($(this).attr('class')) {
       case 'link talent':
         talentstest.find("talents talent").each(function(){
-          //comapres the text in the a tag with the titles returned by the xml search
+          //compares the text in the a tag with the titles returned by the xml search
           if (name == $(this).find("title").text()) {
-            tip = "<h3>" + $(this).find("title").text() + "</h3><table border='1'><tbody><tr><th><p>Step</p></th><th><p>Action</p></th><th><p>Karma</p></th><th><p>Strain</p></th></tr><tr><td>" + $(this).find("step").text() + "</td><td>" + $(this).find("action").text() + "</td><td>" + $(this).find("karma").text() + "</td><td>" + $(this).find("strain").text() + "</td></tr></tbody><p>" + $(this).find("description").text() + "</p>";
+            tip = "<h2>" + $(this).find("title").text() + "</h2><table border='1'><tbody><tr><th><p>Step</p></th><th><p>Action</p></th><th><p>Karma</p></th><th><p>Strain</p></th></tr><tr><td>" + $(this).find("step").text() + "</td><td>" + $(this).find("action").text() + "</td><td>" + $(this).find("karma").text() + "</td><td>" + $(this).find("strain").text() + "</td></tr></tbody><p>" + $(this).find("description").text() + "</p>";
           }
         });
         break;

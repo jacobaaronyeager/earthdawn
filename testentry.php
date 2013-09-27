@@ -1,5 +1,4 @@
 <?php
-  $d = new Debug();
   $talents = simplexml_load_file("library/talentstest.xml") or die("Could not open");
   $talents = $talents->xpath("/talents/talent");
 ?>

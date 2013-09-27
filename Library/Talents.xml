@@ -14,7 +14,7 @@
      <table> 
        <title>Dispel Difficulty Table</title>
           <headers>Spell Circle</headers>
-          <headers>Dispel Difficulty</headers>
+          <headers>Difficulty</headers>
           <row circle="1" difficulty="9" />
           <row circle="2" difficulty="11" />
           <row circle="3" difficulty="13" />
@@ -32,7 +32,7 @@
           <row circle="15" difficulty="29" />
      </table>
   </talent>
-  
+
   <talent name="Absorb Damage">
     <title>Absorb Damage</title>
     <step rank="yes" attribute="CHA"> Rank + CHA</step>
@@ -45,7 +45,7 @@
       ]]>
     </description>
   </talent>
-  
+
   <talent name="Acrobatic Strike">
     <title>Acrobatic Strike</title>
     <step rank="yes" attribute="DEX">Rank + DEX</step>
@@ -59,7 +59,7 @@
     </description>
   </talent>
   
-  <talent>
+    <talent>
     <title>Air Dance</title>
     <step rank="yes" attribute="DEX">Rank + DEX</step>
     <action>Free</action>
@@ -67,12 +67,11 @@
     <strain>1</strain>
     <description>
       <![CDATA[
-      The adept performs quick, gliding movements and rapid attacks in combat. Air Dance requires that the adept be able to move. Windling adepts may use this talent while flying, but it cannot be combined with talents that utilize other forms of magical movement, such as <a>Gliding Stride</a>. The adept substitutes his Air Dance Step for his Dexterity Step
-when making his Initiative Test (see Determine Initiative, p. 214), incurring Initiative Penalties for armor as normal. If making a close combat attack that round, the adept compares his Initiative Test result against his opponent's. On an Excellent Result, the adept may make an additional close combat attack against his opponent, following that character's turn.
+      The adept performs quick, gliding movements and rapid attacks in combat. Air Dance requires that the adept be able to move. Windling adepts may use this talent while flying, but it cannot be combined with talents that utilize other forms of magical movement, such as <a class="link talent">Gliding Stride</a>. The adept substitutes his Air Dance Step for his Dexterity Step when making his Initiative Test (see Determine Initiative, p. 214), incurring Initiative Penalties for armor as normal. If making a close combat attack that round, the adept compares his Initiative Test result against his opponent's. On an Excellent Result, the adept may make an additional close combat attack against his opponent, following that character's turn.
     ]]>
     </description>
   </talent>
-  
+    
   <talent>
     <title>Air Sailing</title>
 
@@ -10957,77 +10956,23 @@ the k'stulaami Gliding racial ability (p. 139).
 </talent>
   <talent>
     <title>Gliding Stride</title>
-    <step rank="" attribute="">Rank +DEX</step>
+    <step rank="yes" attribute="DEX">Rank +DEX</step>
     <action>Free</action>
     <karma>No</karma>
     <strain>1</strain>
-    <p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>The adept move=
-s in a
-graceful fashion through the air, horizontally as well as vertically, using=
- his
-Movement Rate to glide instead of walking or running. He makes a Gliding St=
-ride
-Test, the result being the number of hexes he can glide horizontally. The a=
-dept
-is restricted by his Movement Rate for gliding horizontally, but can use th=
-e <a
-href=3D"onenote:Rules.one#Running">Running</a> combat option to double the
-distance traveled. For every two hexes he glides horizontally, the adept may
-move up or down one hex vertically without affecting his total Movement Rat=
-e.
-The adept cannot go higher, or glide safely lower, than his Gliding Stride =
-Rank
-in hexes. If the adept happens to be suspended any higher than this in mid-=
-air,
-he may instinctively activate his Gliding Stride talent to reduce the dista=
-nce
-he falls by 2 yards per Rank. Gliding Stride cannot be combined with other
-talents that allow a special form of movement, such as <a
-href=3D"onenote:Talents.one#Sprint">Sprint</a> or <a
-href=3D"onenote:Talents.one#Great Leap">Great Leap</a>.
-
-<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'><span
-style=3D'font-style:italic'>Legnaz has a Movement Rate of 6, a Gliding Stri=
-de
-Rank of 8, and has just rolled a 16 on his Gliding Stride Test. He has roll=
-ed
-more distance than he could use if he just wanted to glide horizontally—h=
-is
-Movement Rate of 6 could be doubled to 12 if Running—but he wants to go
-vertically, to glide over a 6-yard-high wall. His game group uses yards in =
-this
-situation, so he simply multiplies his Test Result by two: 16 hexes equal 32
-yards, and his Movement Rate is 12 yards (24 yards if Running). To move upw=
-ards
-6 yards, he has to move double that distance—12 yards—horizontally. Thi=
-s means
-he can just make it to the top of the wall: 12 yards horizontal gliding
-constitutes his Movement Rate, and the 6 yards of upwards travel comes free=
-. If
-he uses the Running combat option, he can move another 12 yards, which would
-allow him to move 6 yards downwards—enough movement to get up over the wa=
-ll and
-down again in one round.</span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</talent><talent><title>Gold Sense
+    <description>
+      <![CDATA[
+        The adept moves in a graceful fashion through the air, horizontally as well as vertically, using his Movement Rate to glide instead of walking or running. He makes a Gliding Stride Test, the result being the number of hexes he can glide horizontally. The adept is restricted by his Movement Rate for gliding horizontally, but can use the <a>Running</a> combat option to double the distance traveled. For every two hexes he glides horizontally, the adept may move up or down one hex vertically without affecting his total Movement Rate.  The adept cannot go higher, or glide safely lower, than his Gliding Stride Rank in hexes. If the adept happens to be suspended any higher than this in mid-air, he may instinctively activate his Gliding Stride talent to reduce the distance he falls by 2 yards per Rank. Gliding Stride cannot be combined with other talents that allow a special form of movement, such as <a>Sprint</a> or <a>Great Leap</a>.
+        ]]>
+      </description>
+      <example>
+        <![CDATA[
+        Legnaz has a Movement Rate of 6, a Gliding Stride Rank of 8, and has just rolled a 16 on his Gliding Stride Test. He has rolled more distance than he could use if he just wanted to glide horizontally&mdash;his Movement Rate of 6 could be doubled to 12 if Running&mdash; but he wants to go vertically, to glide over a 6-yard-high wall. His game group uses yards in this situation, so he simply multiplies his Test Result by two: 16 hexes equal 32 yards, and his Movement Rate is 12 yards (24 yards if Running). To move upwards 6 yards, he has to move double that distance&mdash;12 yards&mdash;horizontally. This means he can just make it to the top of the wall: 12 yards horizontal gliding constitutes his Movement Rate, and the 6 yards of upwards travel comes free. If he uses the Running combat option, he can move another 12 yards, which would allow him to move 6 yards downwards&mdash;enough movement to get up over the wall and down again in one round.
+      ]]>
+    </example>    
+  </talent>
+  
+  <talent><title>Gold Sense
 
 
 
