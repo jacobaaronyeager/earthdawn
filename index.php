@@ -1,11 +1,8 @@
 <?php
   require_once("includes/app.php");
+  $page = setPage();
   $talents = simplexml_load_file("library/talentstest.xml") or die("Could not open");
   $talents = $talents->xpath("/talents/talent");
-  $q = explode("/", $_GET['q']);
-  var_dump($q);
-  $q = str_replace("-", " ", $q);
-  var_dump($q);
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
 <html>
@@ -31,7 +28,7 @@
 </head>
 <body>
   <div id="wrapper">
-    
+    <?php echo $page; ?>
   </div>
 </body>
 </html>

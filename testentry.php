@@ -8,6 +8,7 @@
     <title>Talent list</title>
     <link rel="stylesheet" href="css/jquery-ui-pepper-grinder/jquery-ui-1.10.3.custom.min.css" />
     <link rel="stylesheet" type="text/css" href="css/tipped/tipped.css"/>
+    <link rel="stylesheet" type="text/css" href="css/diQuery-collapsiblePanel.css">
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -16,11 +17,13 @@
     <![endif]-->
     <script type="text/javascript" src="js/spinners/spinners.min.js"></script>
     <script type="text/javascript" src="js/tipped/tipped.js"></script>
+    <script type="text/javascript" src="js/diQuery-collapsiblePanel.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
       preloadLibrary();
       $(document).ready(function() {
         setTooltips();
+        $(".collapsibleContainer").collapsiblePanel();
       });
     </script>
 </head>
@@ -28,7 +31,8 @@
   <?php
     foreach ($talents as $talent) {
       $output = "";
-      $output .= "<h1>" . $talent->title . "</h1>\n";
+      $output .= "<div class='collapsibleContainer' title='" . $talent->title . "'>
+                    <h1>" . $talent->title . "</h1>\n";
       $output .= "<table border='1'>
           <tbody>
             <tr>
@@ -83,9 +87,9 @@
         }      
         $output .= "</tr>
           </tbody>
-        </table>\n";
+        </table>";
       }
-      $output .= "<hr>\n";
+      $output .= "</div>\n";
       echo $output;
     }
   ?>
